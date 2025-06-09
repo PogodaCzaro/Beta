@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pogoda</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app-container">
+    <div id="main-info">
+        <div id="weather-header">
+            <h2 id="weather-description"></h2>
+            <span id="weather-timestamp"></span>
+            <div id="main-temperature">
+                <span id="current-temperature">--°C</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="extra-info">
+        <div class="info-section">
+            <div class="weather-bot">
+                <span class="bot-label">Wiatr:</span>
+                <span id="current-wind-speed">-- km/h</span>
+                <span id="current-wind-direction">(--)</span>
+            </div>
+
+            <div class="weather-bot">
+                <span class="bot-label">Wilgotność:</span>
+                <span id="humidity">--%</span>
+            </div>
+
+            <div class="weather-bot">
+                <span class="bot-label">Ciśnienie:</span>
+                <span id="pressure">-- hPa</span>
+            </div>
+
+            <div class="weather-bot">
+                <span class="bot-label">Punkt rosy:</span>
+                <span id="dew-point">--°C</span>
+            </div>
+
+            <div class="weather-bot">
+                <span class="bot-label">Zachmurzenie:</span>
+                <span id="cloud-cover">--%</span>
+            </div>
+
+            <div id="hourly-forecast-container">
+                <div id="hourly-forecast-scroll"></div>
+            </div>
+
+            <div class="weather-bot">
+                <span class="bot-label">UV:</span>
+                <span id="uv-index">--</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
