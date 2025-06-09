@@ -145,7 +145,7 @@ function setWeatherBackground(code) {
     else if (code >= 95) img = "storm";
 
     const ext = (img === "partly-cloudy" || img === "mostly-sunny") ? "webp" : "jpg";
-    container.style.backgroundImage = `url('/IMGs/DynamicBG/V1/${img}.${ext}')`;
+    container.style.backgroundImage = `url('Beta/IMGs/DynamicBG/V1/${img}.${ext}')`;
 }
 
 // Startujemy
