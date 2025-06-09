@@ -136,7 +136,7 @@ function weatherIcon(code) {
 
 function setWeatherBackground(code) {
     const container = document.getElementById("app-container");
-    let img = "default";
+    let img = "rain2";
 
     if (code === 0) img = "sunny";
     else if ([1, 2].includes(code)) img = "partly-cloudy";
